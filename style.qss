@@ -1,0 +1,134 @@
+/* 现代化扁平设计样式表 */
+/* 全局基础样式 */
+QWidget {
+    background:rgb(51, 67, 90);  /* 主背景色-浅灰色 */
+    font-family: 'Segoe UI', system-ui, sans-serif;  /* 使用系统默认无衬线字体 */
+}
+
+/* 主色调定义 */
+
+
+/* 按钮的三态样式 */
+QPushButton {
+    background: #4A90E2;  /* 使用主品牌色 */
+    color: white;
+    border-radius: 8px;         /* 大圆角现代风格 */
+    padding: 8px 16px;         /* 舒适的点击区域 */
+    border: none;              /* 去除原生边框 */
+    
+}
+
+/* 悬停状态加深主色 */
+QPushButton:hover {
+    background: #357ABD;  /* 主色加深15% */
+}
+
+/* 按下状态的拟物化反馈 */
+QPushButton:pressed {
+    background: #2A5F8F;      /* 主色加深30% */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);  /* 内阴影模拟按压效果 */
+}
+
+/* 输入控件统一风格 */
+QLineEdit, QComboBox {
+    background: white;
+    border: 2px solid #94A3B8;  /* 使用次级灰色边框 */
+    border-radius: 8px;        
+    padding: 8px;              /* 舒适的输入间距 */
+    color: #1E293B;            /* 深灰色文字确保可读性 */
+    selection-background-color: #4A90E2;  /* 文本选中态使用主色 */
+}
+
+/* 聚焦状态高亮反馈 */
+QLineEdit:focus, QComboBox:focus {
+    border-color: #4A90E2;  /* 聚焦时边框变为主色 */
+    outline: none;             /* 去除系统默认聚焦轮廓 */
+}
+
+/* 表格视觉优化 */
+QTableWidget {
+    background: white;
+    border-radius: 8px;        /* 与整体圆角风格统一 */
+    gridline-color:rgb(139, 141, 143);    /* 浅灰色分隔线 */
+    alternate-background-color: #F1F5F9;  /* 交替行背景色 */
+}
+
+/* 表头沉浸式设计 */
+QHeaderView::section {
+    background: #4A90E2;  /* 表头使用主品牌色 */
+    color: white;
+    padding: 12px;              /* 加大表头间距 */
+    border: none;              /* 去除默认边框 */
+}
+
+/* 标签页卡片式布局 */
+QTabBar::tab {
+    background:rgb(74, 144, 226);        /* 未选中的标签背景 */
+    border-radius: 8px 8px 0 0; /* 顶部圆角匹配容器 */
+    padding: 8px 16px;         
+    margin-right: 4px;         /* 标签间隔 */
+          /* 平滑的状态过渡 */
+}
+
+QTabBar::tab:selected {
+    background: white;          /* 选中态白色背景 */
+    color: #4A90E2;     /* 主色文字强调 */
+    font-weight: 600;          /* 加粗字体突出显示 */
+}
+
+/* 分组框立体层次 */
+QGroupBox {
+    border: 2px solid #E9ECEF;  /* 浅灰色边框 */
+    border-radius: 8px;        
+    margin-top: 16px;          /* 与上方元素保持间距 */
+    padding-top: 24px;         /* 标题区域留白 */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;  /* 标题定位基准 */
+    left: 12px;                /* 左侧偏移量 */
+    color: #1A365D;            /* 深蓝色标题文字 */
+    background:rgb(149, 152, 155);        /* 浅灰色背景突出标题 */
+    padding: 4px 8px;          
+    border-radius: 4px;        /* 小圆角匹配整体风格 */
+    font-weight: 600;          /* 中等字重 */
+}
+
+/* 消息弹窗极简主义 */
+QMessageBox {
+    background: white;         /* 纯白背景聚焦内容 */
+    border-radius: 8px;        /* 统一圆角 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* 柔和投影提升层次 */
+}
+
+QMessageBox QLabel {
+    color: #000000;            /* 纯黑色文字 */
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);  /* 半透明白色背景 */
+}
+
+/* 分组框立体层次 */
+QGroupBox::title {
+    background: #4A90E2;  /* 主品牌色背景 */
+    color: white;            /* 高对比度文字 */
+    font-weight: 500;        /* 中等字重 */
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* 表格文字优化 */
+QTableWidget {
+    color: #2D3748;         /* 深灰色文字 */
+    font-size: 13px;
+}
+
+/* 标签页选中指示器 */
+QTabBar::tab:selected {
+    border-bottom: 3px solid #4A90E2;  /* 添加底部指示线 */
+}
+
+/* 消息弹窗排版 */
+QMessageBox QLabel {
+    line-height: 1.6;       /* 1.6倍行距 */
+    margin: 12px 0;
+}
